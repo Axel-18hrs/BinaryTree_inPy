@@ -35,7 +35,7 @@ class BinaryTree:
     def recursive_delete(self, node, data):
         if node is None:
             return node
-
+        #
         # If the value to delete is smaller, search in the left subtree
         if data < node.data:
             node.left = self.recursive_delete(node.left, data)
